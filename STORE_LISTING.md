@@ -42,6 +42,10 @@ strip at each step, producing a seamless image with no overlaps or gaps.
 
 Not affiliated with, endorsed by, or sponsored by WhatsApp or Meta.
 
+## Single purpose
+
+> This extension has one purpose: to capture the user's currently open WhatsApp Web conversation and save it as a stitched PNG image. When the user clicks the toolbar button, it scrolls the open chat from the first message to the last, screenshots the visible area at each step, stitches the pieces into one full-conversation image (split into numbered parts if very tall), and saves it to the user's Downloads folder. It performs no other function.
+
 ## Category
 
 Productivity
