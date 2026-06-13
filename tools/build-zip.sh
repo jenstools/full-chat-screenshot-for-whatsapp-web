@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 VERSION=$(node -p "require('./manifest.json').version")
-OUT="dist/whatsapp-full-chat-screenshot-v${VERSION}.zip"
+OUT="dist/full-chat-screenshot-for-whatsapp-web-v${VERSION}.zip"
 mkdir -p dist
 rm -f "$OUT"
 
