@@ -77,12 +77,4 @@ for size in (16, 32, 48, 128):
 # 512 store icon
 draw_icon(512).save(os.path.join(OUT, "icon-512.png"))
 print("wrote icon-512.png")
-
-# 440x280 small promo tile: tile icon left, text feel via larger icon centered-left
-promo = Image.new("RGB", (440, 280), GREEN_BOT)
-g = vgradient(440, GREEN_TOP, GREEN_BOT)
-promo.paste(g.crop((0, 0, 440, 280)))
-ic = draw_icon(180)
-promo.paste(ic, (40, 50), ic)
-promo.save(os.path.join(OUT, "promo-440x280.png"))
-print("wrote promo-440x280.png")
+# (promo tile + marquee live in tools/make_store_screenshots.py → store/)

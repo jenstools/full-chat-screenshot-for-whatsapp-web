@@ -23,7 +23,7 @@
       "background:#111b21;color:#e9edef;font:13px/1.4 system-ui,Segoe UI,Roboto,sans-serif;" +
       "border:1px solid #2a3942;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.5);padding:14px;";
     const title = document.createElement("div");
-    title.textContent = "WhatsApp full-chat screenshot";
+    title.textContent = "Full Chat Screenshot";
     title.style.cssText = "font-weight:600;margin-bottom:6px;color:#25d366;";
     const status = document.createElement("div");
     status.textContent = "Starting…";

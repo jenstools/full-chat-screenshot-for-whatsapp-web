@@ -1,6 +1,6 @@
 <div align="center">
   <img src="icons/icon-128.png" width="96" height="96" alt="WhatsApp Full Chat Screenshot icon" />
-  <h1>WhatsApp Full Chat Screenshot</h1>
+  <h1>Full Chat Screenshot for WhatsApp Web</h1>
   <p><strong>Capture an entire WhatsApp Web conversation as one stitched PNG — from the first message — in a single click.</strong></p>
   <p>No manual scrolling. No gaps. 100% local. Nothing leaves your browser.</p>
 </div>
@@ -31,6 +31,13 @@ pixel-accurate image of WhatsApp itself — bubbles, wallpaper, timestamps and a
 - **Live progress + Cancel** — an on-page box shows frame count and percentage;
   it's hidden during each capture so it's never baked into the image.
 - **Private** — no servers, analytics, tracking, or network requests of any kind.
+
+## Screenshots
+
+| | |
+| --- | --- |
+| ![Hero](store/screenshot-1-hero.png) | ![Result](store/screenshot-2-result.png) |
+| ![Privacy](store/screenshot-3-privacy.png) | ![How it works](store/screenshot-4-how.png) |
 
 ## Install (unpacked / developer mode)
 
