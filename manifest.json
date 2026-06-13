@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Full Chat Screenshot for WhatsApp Web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One-click capture of a full WhatsApp Web conversation as a stitched PNG, from the first message. No scrolling. 100% local.",
   "homepage_url": "https://github.com/jenstools/full-chat-screenshot-for-whatsapp-web",
   "minimum_chrome_version": "109",
@@ -11,8 +11,7 @@
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
   },
-  "permissions": ["activeTab", "tabs", "downloads", "storage", "scripting"],
-  "host_permissions": ["https://web.whatsapp.com/*"],
+  "permissions": ["activeTab", "scripting", "downloads"],
   "background": {
     "service_worker": "background.js"
   },
@@ -25,12 +24,5 @@
       "48": "icons/icon-48.png",
       "128": "icons/icon-128.png"
     }
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://web.whatsapp.com/*"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
-    }
-  ]
+  }
 }

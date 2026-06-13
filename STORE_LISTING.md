@@ -46,15 +46,21 @@ Not affiliated with, endorsed by, or sponsored by WhatsApp or Meta.
 
 Productivity
 
-## Permission justifications (for review)
+## Permission justifications (paste into the dashboard)
 
-- **activeTab / tabs** — capture the visible region of the WhatsApp tab the user
-  explicitly triggers.
-- **scripting** — inject the capture script into the WhatsApp tab on demand.
-- **downloads** — save the resulting PNG(s) to the user's Downloads folder.
-- **storage** — local settings only; no personal data.
-- **host permission `https://web.whatsapp.com/*`** — the extension functions only
-  on WhatsApp Web and requests access to no other site.
+**activeTab**
+> activeTab is used only after the user clicks the extension's toolbar button on an open WhatsApp Web tab. That click grants temporary access to the single active tab so the extension can inject its capture script and call tabs.captureVisibleTab to screenshot the visible area while it scrolls through the conversation. No other tab is accessed and access ends when the user leaves the tab. This is the minimal way to capture the current tab without requesting broad host permissions.
+
+**scripting**
+> scripting is used to inject the bundled capture script (content.js, included in the package) into the active WhatsApp Web tab when the user clicks the toolbar button. The script measures and scrolls the conversation and reports crop coordinates back to the extension. Injection happens on demand via scripting.executeScript, only into the tab the user activated, and only the bundled script is injected — never remote or dynamically generated code.
+
+**downloads**
+> downloads is used to save the finished screenshot to the user's computer. After the conversation is stitched into one or more PNG images in the browser, the extension calls downloads.download to write the file(s) to the Downloads folder. This is the extension's only output. Nothing is downloaded unless the user starts a capture, and nothing is uploaded anywhere.
+
+**Host permission:** none requested.
+
+**Are you using remote code?** No. All code is bundled in the package; the
+extension loads no external scripts and uses no eval().
 
 ## Assets (ready to upload)
 

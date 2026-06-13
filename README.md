@@ -94,7 +94,7 @@ Key correctness details:
 
 | File                  | Role                                                                 |
 | --------------------- | -------------------------------------------------------------------- |
-| `manifest.json`       | MV3 manifest: metadata, permissions, icons, content-script registration. |
+| `manifest.json`       | MV3 manifest: metadata, minimal permissions (activeTab/scripting/downloads), icons. |
 | `content.js`          | Scroll + measure loop, crop-rect math, on-page progress overlay.     |
 | `background.js`       | Visible-tab capture, canvas stitching, segment splitting, download.  |
 | `popup.html` / `popup.js` | Toolbar popup with the capture button + preflight checks.        |

@@ -20,13 +20,14 @@ locally in your browser. Your messages never leave your computer.
 
 ## Permissions and why they are needed
 
-| Permission                       | Why                                                                 |
-| -------------------------------- | ------------------------------------------------------------------- |
-| `activeTab` / `tabs`             | Capture the visible area of the WhatsApp tab you triggered.         |
-| `scripting`                      | Inject the capture script into the WhatsApp tab on demand.          |
-| `downloads`                      | Save the finished PNG(s) to your Downloads folder.                  |
-| `storage`                        | Reserved for local settings; no personal data is stored.            |
-| host: `https://web.whatsapp.com/*` | Limit the extension strictly to WhatsApp Web — nothing else.      |
+| Permission  | Why                                                                              |
+| ----------- | -------------------------------------------------------------------------------- |
+| `activeTab` | Access only the tab you clicked the button on, to screenshot the visible area.   |
+| `scripting` | Inject the bundled capture script into that tab on demand (no remote code).      |
+| `downloads` | Save the finished PNG(s) to your Downloads folder.                               |
+
+No host permissions are requested. The extension touches only the single tab you
+explicitly activate by clicking its toolbar button.
 
 ## Data retention
 
