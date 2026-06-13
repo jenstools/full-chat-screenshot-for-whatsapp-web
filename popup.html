@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 260px;
+        margin: 0;
+        padding: 16px;
+        font: 13px/1.45 system-ui, "Segoe UI", Roboto, sans-serif;
+        background: #111b21;
+        color: #e9edef;
+      }
+      h1 {
+        font-size: 14px;
+        margin: 0 0 4px;
+        color: #25d366;
+      }
+      p {
+        margin: 0 0 12px;
+        color: #aebac1;
+      }
+      button {
+        width: 100%;
+        background: #25d366;
+        color: #0b141a;
+        font-weight: 600;
+        border: 0;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+      }
+      button:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+      #status {
+        margin-top: 10px;
+        color: #aebac1;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Full chat screenshot</h1>
+    <p>Open a WhatsApp chat, then capture the entire conversation from the first message.</p>
+    <button id="go">Capture full conversation</button>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+# Chrome Web Store listing copy
+
+Reference text for publishing. Not loaded by the extension.
+
+## Name
+
+WhatsApp Full Chat Screenshot
+
+## Short description (≤132 chars)
+
+One-click capture of an entire WhatsApp Web conversation as a stitched PNG, from
+the first message. No scrolling. 100% local.
+
+## Detailed description
+
+Ever needed to save a whole WhatsApp conversation as an image — for a record, a
+dispute, a memory, or to share a thread without forwarding dozens of messages?
+Manually screenshotting and scrolling is painful and leaves gaps.
+
+**WhatsApp Full Chat Screenshot** does it in one click:
+
+• Open any chat in WhatsApp Web and press the button.
+• The extension scrolls to the very first message (loading older messages
+  automatically), then walks back down capturing the conversation.
+• It stitches everything into a single tall PNG — bubbles, wallpaper,
+  timestamps, exactly as WhatsApp renders them.
+• Very long chats are split automatically into numbered image parts.
+• A progress box shows you what's happening, with a Cancel button any time.
+
+**Private by design.** Everything runs locally in your browser. No servers, no
+analytics, no tracking, no network requests. Your messages never leave your
+computer — the only output is the PNG file(s) saved to your Downloads.
+
+**How it works (the technical bit).** WhatsApp Web only keeps on-screen messages
+in the page, so a normal "save page" can't capture the full thread. This
+extension scrolls through the conversation and stitches only the newly revealed
+strip at each step, producing a seamless image with no overlaps or gaps.
+
+Not affiliated with, endorsed by, or sponsored by WhatsApp or Meta.
+
+## Category
+
+Productivity
+
+## Permission justifications (for review)
+
+- **activeTab / tabs** — capture the visible region of the WhatsApp tab the user
+  explicitly triggers.
+- **scripting** — inject the capture script into the WhatsApp tab on demand.
+- **downloads** — save the resulting PNG(s) to the user's Downloads folder.
+- **storage** — local settings only; no personal data.
+- **host permission `https://web.whatsapp.com/*`** — the extension functions only
+  on WhatsApp Web and requests access to no other site.
+
+## Assets
+
+- Store icon: `icons/icon-512.png`
+- Small promo tile (440×280): `icons/promo-440x280.png`
+- Screenshots: capture the popup + a stitched result before submitting.
