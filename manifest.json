@@ -3,7 +3,7 @@
   "name": "Full Chat Screenshot for WhatsApp Web",
   "version": "1.0.0",
   "description": "One-click capture of a full WhatsApp Web conversation as a stitched PNG, from the first message. No scrolling. 100% local.",
-  "homepage_url": "https://github.com/jenstools/whatsapp-full-chat-screenshot",
+  "homepage_url": "https://github.com/jenstools/full-chat-screenshot-for-whatsapp-web",
   "minimum_chrome_version": "109",
   "icons": {
     "16": "icons/icon-16.png",
